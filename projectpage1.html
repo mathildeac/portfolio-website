@@ -2,7 +2,13 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <link rel="normalize" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="icon" type="image/png" href="img/favicomatic/favicon.ico" sizes="32x32" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <title>Mathilde Henneville Portfolio 2022</title>
 </head>
@@ -66,38 +72,38 @@
       </svg>
       <nav>
         <ul>
-          <li><a href="index.html#PROJECTS">PROJECTS</a></li>
-          <li><a href="about.html#INFO">INFO</a></li>
+          <li><a href="Index.html#PROJECTS">PROJECTS</a></li>
+          <li><a href="Index.html#INFO">INFO</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
-    <div>
+    <div class="overview">
       <div>
-        <h1>TILLY</h1>
-        <h3>Tilly is a responsive app providing surf forecasting, while teaching its users how to read and understand it. The vision is to make surf forecasting easy for any type of surfers (beginners to advanced ones) as well as providing an
-          accurate tool to be use daily and on the go.</h3>
+        <h3>TILLY</h3>
+        <h5>Tilly is a responsive app providing surf forecasting, while teaching its users how to read and understand it. The vision is to make surf forecasting easy for any type of surfers (beginners to advanced ones) as well as providing an
+          accurate tool to be use daily and on the go.</h5>
       </div>
     </div>
     <div>
-      <h4>TIMEFRAME</h4>
+      <h5>TIMEFRAME</h5>
       <p>May2021-Dec2021</p>
     </div>
     <div>
-      <h4>SCREENS</h4>
+      <h5>SCREENS</h5>
       <p>37+</p>
     </div>
     <div>
-      <h4>HOURS</h4>
+      <h5>HOURS</h5>
       <p>80+</p>
     </div>
     <div>
-      <h4>DESIGNER</h4>
+      <h5>DESIGNER</h5>
       <p>1</p>
     </div>
     <div>
-      <h4>TOOLS</h4>
+      <h5>TOOLS</h5>
       <div>
         <picture>
           <source srcset="img/Tilly/Tilly@1/figma.png" media="(max-width:100px)">
@@ -121,148 +127,146 @@
           <source srcset="img/Tilly/Tilly@1/usahub.png" media="(max-width:100px)">
           <img src="img/Tilly/Tilly@2/usahub.png" alt="usahublogo" width="80px">
         </picture>
+      </div>
+      <div class="problem statement">
+        <h6>PROBLEM</h6>
+        <h4>Beginners & advanced surfers struggle to understand a surf forecast, correctly.</h4>
+      </div>
+      <div>
+        <picture>
+          <source srcset="img/Tilly/Tilly@1/Mockup1.jpg" media="(max-width:500px)">
+          <img src="img/Tilly/Tilly@2/Mockup1.jpg" alt="Tilly webapp Mockup" width="500px">
+        </picture>
+      </div>
+      <div>
+        <div class="solution">
+          <h4>POSSIBLE SOLUTION</h4>
+          <p>Days on the water are meant to be everything but stressful.
+            To avoid these, it’s good practice to check the conditions of the wind, waves, and weather before heading out to the beach. This can be determinant in avoiding dangerous situations and better prepare for a day of surfing. Existing
+            surf reports aren’t meeting the goal of displaying complex weather data in an accessible, easy-to-comprehend way to people who regularly engage in their favourite sport.
+
+            I have taken up the challenge and have developped a tool that provides three core features:</p>
+          <div>
+            <H6>A clear and concise display of forecast data.</H6>
+          </div>
+          <div>
+            <H6>An educational part to learn how to read a forecast with real-life exercices.</H6>
+          </div>
+          <div>
+            <H6>An alert feature to help to know when is the right time to head out surfing.</H6>
+          </div>
+
+          <div class="outcome">
+            <h4>OUTCOME</h4>
+            <p>New joiners and more advanced surfers can trust our product to show them how to finally crack the mystery of a forecasting report.
+              Users can practice what they have learned once a week via weekly exercices, in the learning section of the webapp.
+              The alerts feature allows them to live their life without having to check their app constantly, and get notified as soon as the forecast has reached their preferences.</p>
+          </div>
+        </div>
+      </div>
+      <div class="definition">
         <div>
-          <div>
-            <h6>PROBLEM</h6>
-            <h2>Beginners & advanced surfers struggle to understand a surf forecast, correctly.</h2>
-          </div>
-          <div>
-            <picture>
-              <source srcset="img/Tilly/Tilly@1/Mockup1.jpg" media="(max-width:500px)">
-              <img src="img/Tilly/Tilly@2/Mockup1.jpg" alt="Tilly webapp Mockup" width="500px">
-            </picture>
-          </div>
-          <div>
-            <div class="possible">
-              <h4>POSSIBLE SOLUTION</h4>
-              <p>Days on the water are meant to be everything but stressful.
-                To avoid these, it’s good practice to check the conditions of the wind, waves, and weather before heading out to the beach. This can be determinant in avoiding dangerous situations and better prepare for a day of surfing. Existing
-                surf reports aren’t meeting the goal of displaying complex weather data in an accessible, easy-to-comprehend way to people who regularly engage in their favourite sport.
+          <picture>
+            <source srcset="img/Tilly/Tilly@1/water.png" media="(max-width:500px)">
+            <img src="img/Tilly/Tilly@2/water.png" alt="water image" width="500px">
+          </picture>
+        </div>
+        <div>
+          <h4>BUT WAIT...WHAT’S A FORECAST ALREADY?</h4>
+          <p>Surf forecasting is the process of using offshore swell data to predict onshore wave conditions. It is used by millions of people across the world, including professionals who put their forecasts online, meteorologists who work for
+            news crews, and surfers all over the world. It is impossible to make an exact prediction of the surf (shape and size of breaking waves), but by knowing a few factors a good prediction can be made.</p>
+        </div>
+        <div>
+          <picture>
+            <source srcset="img/Tilly/Tilly@1/schema.jpg" media="(max-width:500px)">
+            <img src="img/Tilly/Tilly@2/schema.jpg" alt="schema" width="1000px">
+          </picture>
+        </div>
+      </div>
+      <div class="research">
+        <div>
+          <h4>KEY INSIGHTS</h4>
+        </div>
+        <div>
+          <h6>Forecasting is complicated - help!</h6>
+          <p>All participants think that forecasting data is too complicated and all mentioned that they are guessing what they are reading.
+            We might have discovered our USP!
 
-                I have taken up the challenge and have developped a tool that provides three core features:</p>
-              <div>
-                <H6>A clear and concise display of forecast data.</H6>
-              </div>
-              <div>
-                <H6>An educational part to learn how to read a forecast with real-life exercices.</H6>
-              </div>
-              <div>
-                <H6>An alert feature to help to know when is the right time to head out surfing.</H6>
-              </div>
+            Research proved that the current competition doesn’t provide the learning curve customers desperately need. When interviewed, participants said they would switch to a product who can provide more learning support and exercices.
+            This qualitative metric amongst others shows that this feature could be a product market fit.</p>
+        </div>
+        <div>
+          <h6>Decrease time spend looking at screens</h6>
+          <p>As forecasting is only a prediction, participants check their phones regularly during the day and waste time. Our product shall give users the ability to set up an alert whenever the conditions are matching their preferences.
 
-              <div>
-                <h4>OUTCOME</h4>
-                <p>New joiners and more advanced surfers can trust our product to show them how to finally crack the mystery of a forecasting report.
-                  Users can practice what they have learned once a week via weekly exercices, in the learning section of the webapp.
-                  The alerts feature allows them to live their life without having to check their app constantly, and get notified as soon as the forecast has reached their preferences.</p>
-              </div>
-            </div>
+            Research showed that the competition implemented this new feature a few years back and customers were delighted. Although it isn’t accessible from the homepage and doesn’t provide a great and easy experience. There is a missed
+            opportunity as well here.</p>
+        </div>
+        <div>
+          <h6>Accessible information with a click</h6>
+          <p>When travelling, users need a way to quickly access all information about a spot, a local shop, rentals, parking etc..
+            Our product should provide a clear database of accurate information, available through a well-structured search function.
 
-            <div>
-              <div>
-                <picture>
-                  <source srcset="img/Tilly/Tilly@1/water.png" media="(max-width:500px)">
-                  <img src="img/Tilly/Tilly@2/water.png" alt="water image" width="500px">
-                </picture>
-              </div>
-              <div>
-                <h4>BUT WAIT...WHAT’S A FORECAST ALREADY?</h4>
-                <p>Surf forecasting is the process of using offshore swell data to predict onshore wave conditions. It is used by millions of people across the world, including professionals who put their forecasts online, meteorologists who work for
-                  news crews, and surfers all over the world. It is impossible to make an exact prediction of the surf (shape and size of breaking waves), but by knowing a few factors a good prediction can be made.</p>
-              </div>
-              <div>
-                <picture>
-                  <source srcset="img/Tilly/Tilly@1/schema.jpg" media="(max-width:500px)">
-                  <img src="img/Tilly/Tilly@2/schema.jpg" alt="schema" width="1000px">
-                </picture>
-              </div>
+            The value to the customer is a complete database providing all the information he requires to check the forecast.
+            The value for business could come later on, with local shops and retail partnerships: we could display promotions banners and take a commision for any sales down from our website.</p>
+        </div>
+      </div>
+      <div class="define">
+        <div>
+          <h4>DEFINE</h4>
+        </div>
+        <div>
+          <h6>WHAT’S OUR PROBLEM STATEMENT</h6>
+          <p>Surfers of every skill level need a way to understand a forecasting report in order to make better decisions, and planning effectively their surf activities.</p>
+        </div>
+        <div>
+          <picture>
+            <source srcset="img/Tilly/Tilly@1/userpersos.png" media="(max-width:6000px)">
+            <img src="img/Tilly/Tilly@2/userpersos.png" alt="Userpersonas" width="1000px">
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source srcset="img/Tilly/Tilly@1/wireframes.png" media="(max-width:6000px)">
+            <img src="img/Tilly/Tilly@2/wireframes.png" alt="Wireframes" width="1000px">
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source srcset="img/Tilly/Tilly@1/iterate.png" media="(max-width:6000px)">
+            <img src="img/Tilly/Tilly@2/iterate.png" alt="Iterate" width="1000px">
+          </picture>
+        </div>
+      </div>
+      <div class="takeaways">
+        <div>
+          <h2>TAKEAWAYS</h2>
+        </div>
+        <div>
+          <h6>CHALLENGES & INSIGHTS</h6>
+          <p>One of the challenges on this project was first to understand, on my own, what was a surf forecast and how to read it. In order to effectively sell the idea of a webapp helping users to understand forecasting, my designs would need to
+            reflect how easy it is and how this product make it easy for them. Then it was a matter of displaying the data in the simplest way possible but still accurately.</p>
+        </div>
+        <div>
+          <h6>FUTURE PLANS & UPDATES</h6>
+          <p>The search function would be my primary focus of improvement. A refinement of the data, more graphs and subtle animations to bring that delight touch to the user.
 
-            <div class="research">
-                <div>
-                  <h4>KEY INSIGHTS</h4>
-                </div>
-                <div>
-                  <h6>Forecasting is complicated - help!</h6>
-                  <p>All participants think that forecasting data is too complicated and all mentioned that they are guessing what they are reading.
-                    We might have discovered our USP!
+            The educational portal would be my second choice to improve, with more vocabulary, games and rewards to gain trust and users retention.
 
-                    Research proved that the current competition doesn’t provide the learning curve customers desperately need. When interviewed, participants said they would switch to a product who can provide more learning support and exercices.
-                    This qualitative metric amongst others shows that this feature could be a product market fit.</p>
-                </div>
-                <div>
-                  <h6>Decrease time spend looking at screens</h6>
-                  <p>As forecasting is only a prediction, participants check their phones regularly during the day and waste time. Our product shall give users the ability to set up an alert whenever the conditions are matching their preferences.
-
-                    Research showed that the competition implemented this new feature a few years back and customers were delighted. Although it isn’t accessible from the homepage and doesn’t provide a great and easy experience. There is a missed
-                    opportunity as well here.</p>
-                </div>
-                <div>
-                  <h6>Accessible information with a click</h6>
-                  <p>When travelling, users need a way to quickly access all information about a spot, a local shop, rentals, parking etc..
-                    Our product should provide a clear database of accurate information, available through a well-structured search function.
-
-                    The value to the customer is a complete database providing all the information he requires to check the forecast.
-                    The value for business could come later on, with local shops and retail partnerships: we could display promotions banners and take a commision for any sales down from our website.</p>
-                </div>
-                <div class="DEFINE">
-                  <div>
-                    <h4>DEFINE</h4>
-                  </div>
-                  <div>
-                    <h6>WHAT’S OUR PROBLEM STATEMENT</h6>
-                    <p>Surfers of every skill level need a way to understand a forecasting report in order to make better decisions, and planning effectively their surf activities.</p>
-                  </div>
-                  <div>
-                    <picture>
-                      <source srcset="img/Tilly/Tilly@1/userpersos.png" media="(max-width:6000px)">
-                      <img src="img/Tilly/Tilly@2/userpersos.png" alt="Userpersonas" width="1000px">
-                    </picture>
-                  </div>
-                  <div>
-                    <picture>
-                      <source srcset="img/Tilly/Tilly@1/wireframes.png" media="(max-width:6000px)">
-                      <img src="img/Tilly/Tilly@2/wireframes.png" alt="Wireframes" width="1000px">
-                    </picture>
-                  </div>
-                  <div>
-                    <picture>
-                      <source srcset="img/Tilly/Tilly@1/iterate.png" media="(max-width:6000px)">
-                      <img src="img/Tilly/Tilly@2/iterate.png" alt="Iterate" width="1000px">
-                    </picture>
-                  </div>
-                  <div class="Takeaways">
-                    <div>
-                      <h2>TAKEAWAYS</h2>
-                    </div>
-                    <div>
-                      <h6>CHALLENGES & INSIGHTS</h6>
-                      <p>One of the challenges on this project was first to understand, on my own, what was a surf forecast and how to read it. In order to effectively sell the idea of a webapp helping users to understand forecasting, my designs would need to reflect how easy it is and how this product make it easy for them. Then it was a matter of displaying the data in the simplest way possible but still accurately.</p>
-                    </div>
-                    <div>
-                      <h6>FUTURE PLANS & UPDATES</h6>
-                      <p>The search function would be my primary focus of improvement. A refinement of the data, more graphs and subtle animations to bring that delight touch to the user.
-
-The educational portal would be my second choice to improve, with more vocabulary, games and rewards to gain trust and users retention.
-
-The notifications center, and more precisely alerts: Develop sounds for push notifications as a next stage of development.</p>
-                    </div>
-                    <div>
-                      <h6>WHAT WOULD HAVE I DONE DIFFERENTLY?</h6>
-                      <p>This project took me more time than I initially planned it. Why? I focused on purpose on the surfing industry, as I didn’t know anything really about it. My thinking was that if I don’t have any prior knowledge, then I have no bias and my work will be solely based on user research.
-It actually back fired a little bit...
-I wanted to do as much as features as possible from my interviews findings, I have been bogged down in too much details and functions and made it too complicated for me to follow through.
-This project reminded me that keeping it simple, from the beginning, is key for success. Also, testing with users as much as possible in order to avoid back and forth and waste of time.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            The notifications center, and more precisely alerts: Develop sounds for push notifications as a next stage of development.</p>
+        </div>
+        <div>
+          <h6>WHAT WOULD HAVE I DONE DIFFERENTLY?</h6>
+          <p>This project took me more time than I initially planned it. Why? I focused on purpose on the surfing industry, as I didn’t know anything really about it. My thinking was that if I don’t have any prior knowledge, then I have no bias and
+            my work will be solely based on user research.
+            It actually back fired a little bit...
+            I wanted to do as much as features as possible from my interviews findings, I have been bogged down in too much details and functions and made it too complicated for me to follow through.
+            This project reminded me that keeping it simple, from the beginning, is key for success. Also, testing with users as much as possible in order to avoid back and forth and waste of time.</p>
         </div>
       </div>
   </main>
   <footer>
-    <div>
+    <div class="next project">
       <h2>You like what you see? Let's talk</h2>
       <p>mathildehnv@gmail.com</p>
       <li><a href="">Next project</a></li>

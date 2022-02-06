@@ -1,0 +1,86 @@
+/*
+Colors used:
+Primary Color (lightgrey): #FAFAFA;
+Secondary Color (lightbeige): #F5F3F3;
+Text color (coal): #3F4144
+*/
+body {
+  background-color: #F8F8F8;
+font-family: "Poppins", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.6;
+color: #3F4144
+}
+
+h1,h2,h3,h4,h5 {
+  line-height: 1.4
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 600;
+}
+h5 {
+  font-size: 1.15em;
+  font-weight: 400;
+}
+img {
+  width: 100%;
+}
+a {
+  color: #7CF0BD;
+  text-decoration: none; /* No underlining */
+}
+a:hover,
+a:focus {
+  color: #7CF0BD;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:visited { /* visited link */
+  color: #395B50;
+}
+a:active { /* selected link */
+  color: #3F4144;
+}
+
+.button.email {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #FFFFFF;
+  color: #3F4144; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 4px;
+  transition: 0.2s opacity;
+}
+
+.button.linkedin {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #FFFFFF;
+  color: #3F4144; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 4px;
+  transition: 0.2s opacity;
+}
+.button.linkedin:hover {
+  background-color: #fafafa;
+  color: #3F4144;
+}
+.button.email:hover {
+  background-color: #fafafa;
+  color: #3F4144;
+}
