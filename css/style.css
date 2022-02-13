@@ -4,6 +4,21 @@ Primary Color (lightgrey): #FAFAFA;
 Secondary Color (lightbeige): #F5F3F3;
 Text color (coal): #3F4144
 */
+* {
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.26);
+  -moz-box-shadow:    0px 0px 6px 0px rgba(50, 50, 50, 0.26);
+  box-shadow:         0px 0px 6px 0px rgba(50, 50, 50, 0.26);
+}
+
 body {
   background-color: #F8F8F8;
 font-family: "Poppins", sans-serif;
@@ -11,6 +26,10 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.6;
 color: #3F4144
+}
+
+main {
+  padding-top: 133px;
 }
 
 h1,h2,h3,h4,h5 {
@@ -36,7 +55,7 @@ h4 {
 }
 h5 {
   font-size: 1.15em;
-  font-weight: 400;
+  font-weight: 600;
 }
 img {
   width: 100%;
@@ -83,4 +102,42 @@ a:active { /* selected link */
 .button.email:hover {
   background-color: #fafafa;
   color: #3F4144;
+}
+
+/* Layout styling*/
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.center {
+  text-align: center;
+}
+.logo {
+  max-width: 250px;
+}
+.nav {
+  max-width: 100%;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+#hero {
+  background-color: #F8F8F8;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
