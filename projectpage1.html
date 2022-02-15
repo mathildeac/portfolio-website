@@ -10,12 +10,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
+  <script src="https://kit.fontawesome.com/196312c0aa.js" crossorigin="anonymous"></script>
   <title>Mathilde Henneville Portfolio 2022</title>
 </head>
 
 <body>
   <header>
     <div class="container">
+          <div class="navtoggle" id="myNavtoggle">
+      <div class="headerstyle">
+
+
       <div class="logo">
       <svg width="317" height="25" viewBox="0 0 317 25" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -76,9 +81,10 @@
         <ul>
           <li><a href="Index.html#PROJECTS">PROJECTS</a></li>
           <li><a href="Index.html#INFO">INFO</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
-    </div>
+    </div>  </div> </div>
   </header>
   <main>
     <div id="overview">
@@ -303,6 +309,7 @@
     </div>
   </footer>
 
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/scripts.js"></script>
 
 </body>

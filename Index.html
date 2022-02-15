@@ -10,6 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="img/favicomatic/favicon.ico" sizes="32x32" />
   <meta charset="utf-8">
+  <script src="https://kit.fontawesome.com/196312c0aa.js" crossorigin="anonymous"></script>
+
   <title>Mathilde Henneville Portfolio 2022</title>
 </head>
 
@@ -17,9 +19,11 @@
   <header>
 
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+      <div class="headerstyle">
+
+
       <div class="logo">
-
-
         <svg width="317" height="25" viewBox="0 0 317 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M20.8299 7.62002C22.8499 7.62002 24.4499 8.22002 25.6299 9.42002C26.8299 10.6 27.4299 12.38 27.4299 14.76V24H22.7499V15.48C22.7499 14.2 22.4799 13.25 21.9399 12.63C21.4199 11.99 20.6699 11.67 19.6899 11.67C18.5899 11.67 17.7199 12.03 17.0799 12.75C16.4399 13.45 16.1199 14.5 16.1199 15.9V24H11.4399V15.48C11.4399 12.94 10.4199 11.67 8.37991 11.67C7.29991 11.67 6.43991 12.03 5.79991 12.75C5.15991 13.45 4.83991 14.5 4.83991 15.9V24H0.159912V7.86002H4.62991V9.72002C5.22991 9.04002 5.95991 8.52002 6.81991 8.16002C7.69991 7.80002 8.65991 7.62002 9.69991 7.62002C10.8399 7.62002 11.8699 7.85002 12.7899 8.31002C13.7099 8.75002 14.4499 9.40002 15.0099 10.26C15.6699 9.42002 16.4999 8.77002 17.4999 8.31002C18.5199 7.85002 19.6299 7.62002 20.8299 7.62002Z"
@@ -79,9 +83,10 @@
         <ul class="navigation">
           <li><a href="index.html#PROJECTS">PROJECTS</a></li>
           <li><a href="index.html#PROJECTS">INFO</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
-    </div>
+    </div></div></div>
   </header>
   <main>
     <div id="hero">
@@ -737,21 +742,24 @@
 
 
       <div id="about" <div class="container">
-        <h4>Info</h4>
+<div class="titleinfo">
+        <h4>Info</h4></div>
         <div class="row">
           <div class="column col-md-6 col-lg-7">
+            <div class="mathimage">
             <picture>
               <source srcset="img/Mathilde profile.png" media="(max-width:100px)">
               <img src="img/Mathilde profile.png" alt="Mathilde Henneville picture" width="300px">
             </picture>
-          </div>
+          </div></div>
 
           <div class="column col-md-6 col-lg-5">
+            <div class="blurb">
+
             <p>With a background in business and graphic design, I thrive in delivering delightful and smart software that delivers value and great user experience. Previously worked on projects such as website designs, dashboards, internal admin
-              tools,
-              vendor portal and menu ordering app. I currently work full-time as a Product Designer at Feedr - which is an online marketplace empowering a community of artisan food vendors to produce and supply meals for the workplace.</p>
+              tools,vendor portal and menu ordering app. I currently work full-time as a Product Designer at Feedr - which is an online marketplace empowering a community of artisan food vendors to produce and supply meals for the workplace.</p>
           </div></div>
-        </div>
+        </div></div>
 
   </main>
   <footer>
@@ -773,6 +781,7 @@
 
   </footer>
 
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/scripts.js"></script>
 
 </body>

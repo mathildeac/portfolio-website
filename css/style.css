@@ -9,14 +9,10 @@ Text color (coal): #3F4144
 }
 
 header {
-  text-align: center;
   padding: 10px 0;
   position: fixed;
-  display: inline-block;
   width: 100%;
-  -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.26);
-  -moz-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.26);
-  box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.26);
+
 }
 
 body {
@@ -29,7 +25,7 @@ body {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 56px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -141,7 +137,7 @@ a:active {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 100px;
 }
 
 .nav {
@@ -151,11 +147,10 @@ a:active {
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin:0
 }
 
-nav>ul>li {
-  display: inline-block;
-}
+
 
 nav>ul>li>a {
   padding: 0 15px;
@@ -189,6 +184,49 @@ nav>ul>li>a {
   clear: both;
   display: table;
 }
+.headerstyle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mathimage {
+  padding-left: 110px
+}
+.blurb {
+  padding-left: 110px
+}
+
+.titleinfo {
+  padding-left: 110px
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  padding-right: 0
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -198,18 +236,24 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
+  nav>ul>li {
+    display: inline-block;
   }
+  nav > ul {
+    float: right;
+    margin-top: 1em 0;
+  }
+  .navtoggle li:last-child {
+  display: none;
+}
 
   .col-md-6 {
     width: 50%;
   }
 }
-
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -231,6 +275,7 @@ X-large devices (1440px or larger)
   max-width: 100%;
   height: auto;
 }
+
 
 @keyframes color-change {
   0% {
