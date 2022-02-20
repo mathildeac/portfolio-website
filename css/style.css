@@ -12,24 +12,36 @@ header {
   padding: 10px 0;
   position: fixed;
   width: 100%;
-
+  background-image: radial-gradient( circle farthest-corner at 50.7% 54%,  rgba(204,254,152,1) 0%, rgba(229,253,190,1) 92.4% );
+}
+html {
+height: 100%;
+}
+footer {
+background-image: radial-gradient( circle farthest-corner at 50.7% 54%,  rgba(204,254,152,1) 0%, rgba(229,253,190,1) 92.4% );
 }
 
+
+
 body {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.6;
-  color: #3F4144
+  line-height: 1.8;
+  color: #3f4144;
 }
 
 main {
   padding-top: 56px;
 }
 
-h1, h2, h3, h4, h5 {
-  line-height: 1.4
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.4;
 }
 
 h1 {
@@ -40,16 +52,19 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+  line-height: 1.6;
 }
 
 h3 {
   font-size: 1.75em;
   font-weight: 600;
+  line-height: 1.8;
 }
 
 h4 {
   font-size: 1.35em;
   font-weight: 600;
+  line-height: 1.8;
 }
 
 h5 {
@@ -62,33 +77,33 @@ img {
 }
 
 a {
-  color: #7CF0BD;
+  color: #7cf0bd;
   text-decoration: none;
   /* No underlining */
 }
 
 a:hover,
 a:focus {
-  color: #7CF0BD;
+  color: #7cf0bd;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
 
 a:visited {
   /* visited link */
-  color: #395B50;
+  color: #395b50;
 }
 
 a:active {
   /* selected link */
-  color: #3F4144;
+  color: #3f4144;
 }
 
 .button.email {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #FFFFFF;
-  color: #3F4144;
+  background-color: #ffffff;
+  color: #3f4144;
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
@@ -100,8 +115,8 @@ a:active {
 .button.linkedin {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #FFFFFF;
-  color: #3F4144;
+  background-color: #ffffff;
+  color: #3f4144;
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
@@ -112,14 +127,14 @@ a:active {
 
 .button.linkedin:hover {
   background-color: #fafafa;
-  color: #3F4144;
-  opacity: 0.8
+  color: #3f4144;
+  opacity: 0.8;
 }
 
 .button.email:hover {
   background-color: #fafafa;
-  color: #3F4144;
-  opacity: 0.8
+  color: #3f4144;
+  opacity: 0.8;
 }
 
 /* Layout styling*/
@@ -144,15 +159,13 @@ a:active {
   max-width: 100%;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
-  margin:0
+  margin: 0;
 }
 
-
-
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 600;
@@ -160,7 +173,7 @@ nav>ul>li>a {
 }
 
 #hero {
-  background-color: #F8F8F8;
+  background-image: radial-gradient( circle farthest-corner at 50.7% 54%,  rgba(204,254,152,1) 0%, rgba(229,253,190,1) 92.4% );
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -176,7 +189,7 @@ nav>ul>li>a {
 
 [class*="col-"] {
   float: left;
-  padding: 10px 0;
+  padding: 10px 10px;
 }
 
 .row::after {
@@ -191,26 +204,28 @@ nav>ul>li>a {
 }
 
 .mathimage {
-  padding-left: 110px
+  padding-left: 110px;
 }
 .blurb {
-  padding-left: 110px
+  padding-left: 110px;
 }
 
 .titleinfo {
-  padding-left: 110px
+  padding-left: 110px;
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  padding-right: 0
+  padding-right: 0;
   top: 2px;
   font-size: 20px;
 }
@@ -218,14 +233,18 @@ nav>ul>li>a {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
+}
+
+.responsive .headerstyle {
+  align-items: flex-start;
 }
 
 /* ==============================
@@ -236,7 +255,7 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
   nav > ul {
@@ -244,16 +263,16 @@ Medium devices (640px and larger)
     margin-top: 1em 0;
   }
   .navtoggle li:last-child {
-  display: none;
-}
-
+    display: none;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
   .col-md-6 {
     width: 50%;
   }
 }
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -268,14 +287,14 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+}
 
 #berlin {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
-
 
 @keyframes color-change {
   0% {
