@@ -173,17 +173,20 @@ nav>ul>li>a {
 
 #hero {
   background-image: radial-gradient(circle farthest-corner at 50.7% 54%, rgba(204, 254, 152, 1) 0%, rgba(229, 253, 190, 1) 92.4%);
-  padding: 20px 0;
   display: inline-block;
   width: 100%;
   text-align: center;
 }
 
 #about {
-  padding: 20px;
+  padding: 0px;
   display: inline-block;
   width: 100%;
   text-align: left;
+  background-color: #FFFFFF
+}
+#Projectsection {
+background-color: #FFFFFF
 }
 
 [class*="col-"] {
@@ -303,16 +306,15 @@ X-large devices (1440px or larger)
   height: auto;}
 
 @keyframes color-change {0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+50% {fill: #fcffad;}
+100% {fill: #f76414;}
 
 
 /* ==============================
 animation code
 ================================= */
 .sun {
-  animation: 4s color-change infinite alternate linear;
-}
+  animation: 4s color-change infinite alternate linear;}
 
 @keyframes cloud-move {
   from {
